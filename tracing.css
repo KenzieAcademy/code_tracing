@@ -1,0 +1,13 @@
+body {font-family: sans-serif;}
+#examples {column-count: 4;}
+ul {margin: 0;}
+li {cursor: pointer;}
+li:hover {text-decoration: underline;}
+#container {display: flex; font-size: 24px; position: relative;}
+#code {display: flex; min-width: 200px; margin-left: 180px;font-family:'Courier New', Courier, monospace;}
+#marker {position: absolute; left: 0; top: 0; width: 172px; height: 20px; background: url('pencil.png'); background-size: contain;}
+#vars {display: flex; color: darkblue; font-size: 30px;}
+.var {display: flex; flex-direction: column; align-items: center; min-width: 40px; font-family:'Nothing You Could Do', cursive; margin: 0 10px;}
+.var div {opacity:0.5;}
+.var div:first-child {font-size: 36px; opacity: 1;}
+.var div:last-child {opacity: 1;}
