@@ -1,12 +1,12 @@
 add_example({
 name: "Swap variables",
 
-code: `var x = 4;
+code: `<code>var x = 4;
 var y = 7;
 var temp = x;
 x = y;
 y = temp;
-console.log(y);`,
+console.log(y);</code>`,
 
 vars: ["x", "y", "temp", "output"],
 
