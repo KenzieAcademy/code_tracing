@@ -14,3 +14,4 @@ li:hover {text-decoration: underline;}
 .var div:last-child {opacity: 1;}
 #code span {border: 1px solid transparent;}
 #code span.highlight {background: lightgreen; border: 1px solid darkgreen;}
+#code span.hint {background: yellow; border: 1px solid yellowgreen;}
