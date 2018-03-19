@@ -120,7 +120,7 @@ traces: [
     [3, "total", 6],
     [2, "i", 4, "high3"],
     [2, null, null, "high2"],
-    [5, "output", 3],
+    [5, "output", 6],
     [6]
 ]
 });
