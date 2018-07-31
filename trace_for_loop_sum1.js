@@ -1,8 +1,8 @@
-add_example({
+addExample({
 name: "For Loop - Sum (1)",
 
-code: `<code>var total = 0;
-for(<span id="high1">var i = 1</span>; <span id="high2">i &lt; 3</span>; <span id="high3">i++</span>) {
+code: `<code>let total = 0;
+for(<span id="high1">let i = 1</span>; <span id="high2">i &lt; 3</span>; <span id="high3">i++</span>) {
    total = total + i;
 }
 console.log(total);

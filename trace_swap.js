@@ -1,9 +1,9 @@
-add_example({
+addExample({
 name: "Swap variables",
 
-code: `<code>var x = 4;
-var y = 7;
-var temp = x;
+code: `<code>let x = 4;
+let y = 7;
+let temp = x;
 x = y;
 y = temp;
 console.log(y);</code>`,

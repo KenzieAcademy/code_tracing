@@ -1,17 +1,104 @@
-body {font-family: sans-serif;}
-#examples {column-count: 4; margin: 30px 0 40px;}
-.selected {font-weight: bold;}
-ul {margin: 0;}
-li {cursor: pointer;}
-li:hover {text-decoration: underline;}
-#container {display: flex; border: 1px solid gray; padding: 30px 0; font-size: 20px; position: relative; user-select: none;}
-#code {display: flex; min-width: 200px; margin: 0 25px 100px 180px;font-family:'Courier New', Courier, monospace;}
-#marker {position: absolute; left: 0; top: 0; width: 172px; height: 20px; background: url('pencil.png'); background-size: contain;}
-#vars {display: flex; margin-top: -25px; color: darkblue; font-size: 30px;}
-.var {display: flex; flex-direction: column; align-items: center; min-width: 40px; font-family:'Nothing You Could Do', cursive; margin: 0 10px;}
-.var div {opacity:0.5; margin: -5px 0;}
-.var div:first-child {font-size: 36px; opacity: 1; margin: 0;}
-.var div:last-child {opacity: 1;}
-#code span {border: 1px solid transparent;}
-#code span.highlight {background: lightgreen; border: 1px solid darkgreen;}
-#code span.hint {background: yellow; border: 1px solid yellowgreen;}
+:root {
+  --base-size: 20px;
+
+  line-height: var(--base-size);
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+#examples {
+  column-count: 4;
+  margin: calc(var(--base-size) * 1.5) 0 calc(var(--base-size) * 2);
+}
+
+.selected {
+  font-weight: bold;
+}
+
+ul {
+  margin: 0;
+}
+
+li {
+  cursor: pointer;
+}
+
+li:hover {
+  text-decoration: underline;
+}
+
+#container {
+  display: flex;
+  border: 1px solid gray;
+  padding: calc(var(--base-size) * 1.5) 0;
+  font-size: var(--base-size);
+  position: relative;
+  user-select: none;
+}
+
+#code {
+  display: flex;
+  min-width: 200px;
+  margin: 0 calc(var(--base-size) * 1.5) calc(var(--base-size) * 5) calc(var(--base-size) * 9);
+  font-family: 'Courier New', Courier, monospace;
+}
+
+#marker {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 172px;
+  height: 20px;
+  background: url('pencil.png');
+  background-size: contain;
+}
+
+#vars {
+  display: flex;
+  margin-top: calc(var(--base-size) * -1);
+  color: darkblue;
+  font-size: calc(var(--base-size) * 1.5);
+}
+
+.var {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: calc(var(--base-size) * 2);
+  font-family: 'Nothing You Could Do', cursive;
+  margin: 0 calc(var(--base-size) / 2);
+}
+
+.var div {
+  opacity: 0.5;
+  margin: calc(var(--base-size) * 0.2) 0;
+}
+
+.var div:first-child {
+  font-size: calc(var(--base-size) * 2);
+  opacity: 1;
+  margin: 0 0 calc(var(--base-size) * 0.4);
+  padding-bottom: 3px;
+  border-bottom: dashed 3px darkblue;
+}
+
+.var div:last-child {
+  opacity: 1;
+}
+
+#code span {
+  border: 1px solid transparent;
+}
+
+#code span.highlight {
+  background: lightgreen;
+  border: 1px solid darkgreen;
+}
+
+#code span.hint {
+  background: yellow;
+  border: 1px solid yellowgreen;
+}

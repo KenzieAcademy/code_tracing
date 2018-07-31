@@ -1,8 +1,8 @@
-add_example({
+addExample({
 name: "Arithmetic",
 
-code: `<code>var a = 2;
-var b = 3;
+code: `<code>let a = 2;
+let b = 3;
 a++;
 console.log(a * b);</code>`,
 
@@ -18,12 +18,12 @@ traces: [
 });
     
 
-add_example({
+addExample({
 name: "Swap variables",
 
-code: `<code>var x = 4;
-var y = 7;
-var temp = x;
+code: `<code>let x = 4;
+let y = 7;
+let temp = x;
 x = y;
 y = temp;
 console.log(y);</code>`,
@@ -42,12 +42,12 @@ traces: [
 });
 
 
-add_example({
+addExample({
 name: "Conditional",
 
-code: `<code>var a = 6;
-var b = 3;
-var c = 5;
+code: `<code>let a = 6;
+let b = 3;
+let c = 5;
 if(a &lt; b) {
     console.log(a + c);
 } else {
@@ -67,11 +67,11 @@ traces: [
 });
     
     
-add_example({
+addExample({
 name: "For Loop - Sum (1)",
 
-code: `<code>var total = 0;
-for(<span id="high1">var i = 1</span>; <span id="high2">i &lt; 3</span>; <span id="high3">i++</span>) {
+code: `<code>let total = 0;
+for(<span id="high1">let i = 1</span>; <span id="high2">i &lt; 3</span>; <span id="high3">i++</span>) {
     total = total + i;
 }
 console.log(total);
@@ -95,11 +95,11 @@ traces: [
 });
 
 
-add_example({
+addExample({
 name: "For Loop - Sum (2)",
 
-code: `<code>var total = 0;
-for(<span id="high1">var i = 1</span>; <span id="high2">i &lt;= 3</span>; <span id="high3">i++</span>) {
+code: `<code>let total = 0;
+for(<span id="high1">let i = 1</span>; <span id="high2">i &lt;= 3</span>; <span id="high3">i++</span>) {
     total = total + i;
 }
 console.log(total);
@@ -126,12 +126,12 @@ traces: [
 });
 
 
-add_example({
+addExample({
 name: "Summing selected array elements",
 
-code: `<code>var arr = [<span id="arr0">2</span>, <span id="arr1">5</span>, <span id="arr2">1</span>, <span id="arr3">4</span>];
-var total = 0;
-for(<span id="for1">var i = 0</span>; <span id="for2">i &lt; arr.length</span>; <span id="for3">i++</span>) {
+code: `<code>let arr = [<span id="arr0">2</span>, <span id="arr1">5</span>, <span id="arr2">1</span>, <span id="arr3">4</span>];
+let total = 0;
+for(<span id="for1">let i = 0</span>; <span id="for2">i &lt; arr.length</span>; <span id="for3">i++</span>) {
    if(<span id="ref1">arr[i]</span> &lt; 3) {
       total = total + <span id="ref2">arr[i]</span>;
    }
