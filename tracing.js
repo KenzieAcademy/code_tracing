@@ -2,6 +2,7 @@ let currentTraces;
 let currentVariables;
 let traceIndex = 0;
 const examples = [];
+const exampleList = document.getElementById("example-list");
 const message = document.getElementById("message");
 const container = document.getElementById("container");
 const variablesDiv = document.getElementById("vars");
@@ -37,14 +38,16 @@ function trace(line, variable, newValue, highlight, hint) {
 
 function addExample(example) {
     const link = document.createElement("li");
-    link.innerHTML = example.name;
-    link.dataset.example = examples.length;
+    const anchor = document.createElement("a");
+    link.appendChild(anchor);
+    anchor.innerHTML = example.name;
+    anchor.dataset.example = examples.length;
     examples.push(example);
-    link.onclick = startExample;
-    document.getElementById("example-list").appendChild(link);
+    anchor.onclick = startExample;
+    exampleList.appendChild(link);
     if(examples.length == 1) {
         // automatically click first example.
-        link.click();
+        anchor.click();
     }
 }
 

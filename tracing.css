@@ -14,6 +14,18 @@ body {
   margin: calc(var(--base-size) * 1.5) 0 calc(var(--base-size) * 2);
 }
 
+#examples a, #examples a:link {
+  color: dodgerblue;
+}
+
+#examples a:hover {
+  color: mediumpurple;
+}
+
+#examples a:active {
+  color: deeppink;
+}
+
 .selected {
   font-weight: bold;
 }
