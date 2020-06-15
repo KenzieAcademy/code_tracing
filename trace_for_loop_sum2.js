@@ -2,7 +2,7 @@ addExample({
 name: "For Loop - Sum (2)",
 
 code: `<code>let total = 0;
-for(<span id="high1">let i = 1</span>; <span id="high2">i &lt;= 3</span>; <span id="high3">i++</span>) {
+for(<span id="high1">let i = 1</span>; <span id="high2">i &lt;= 3</span>; <span id="high3">i += 1</span>) {
    total = total + i;
 }
 console.log(total);
