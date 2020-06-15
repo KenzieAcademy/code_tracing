@@ -3,7 +3,7 @@ name: "Arithmetic",
 
 code: `<code>let a = 2;
 let b = 3;
-a++;
+a += 1;
 console.log(a * b);</code>`,
 
 vars: ["a", "b", "output"],
@@ -71,7 +71,7 @@ addExample({
 name: "For Loop - Sum (1)",
 
 code: `<code>let total = 0;
-for(<span id="high1">let i = 1</span>; <span id="high2">i &lt; 3</span>; <span id="high3">i++</span>) {
+for(<span id="high1">let i = 1</span>; <span id="high2">i &lt; 3</span>; <span id="high3">i += 1</span>) {
     total = total + i;
 }
 console.log(total);
@@ -99,7 +99,7 @@ addExample({
 name: "For Loop - Sum (2)",
 
 code: `<code>let total = 0;
-for(<span id="high1">let i = 1</span>; <span id="high2">i &lt;= 3</span>; <span id="high3">i++</span>) {
+for(<span id="high1">let i = 1</span>; <span id="high2">i &lt;= 3</span>; <span id="high3">i += 1</span>) {
     total = total + i;
 }
 console.log(total);
@@ -131,7 +131,7 @@ name: "Summing selected array elements",
 
 code: `<code>let arr = [<span id="arr0">2</span>, <span id="arr1">5</span>, <span id="arr2">1</span>, <span id="arr3">4</span>];
 let total = 0;
-for(<span id="for1">let i = 0</span>; <span id="for2">i &lt; arr.length</span>; <span id="for3">i++</span>) {
+for(<span id="for1">let i = 0</span>; <span id="for2">i &lt; arr.length</span>; <span id="for3">i += 1</span>) {
    if(<span id="ref1">arr[i]</span> &lt; 3) {
       total = total + <span id="ref2">arr[i]</span>;
    }
